@@ -10,8 +10,8 @@ import {
 } from 'lucide-react';
 import { Card, CardContent } from '../components/ui/card';
 import { Input } from '../components/ui/input';
-import { Textarea } from '../components/ui/textArea';
 import { Button } from '../components/ui/button';
+import { Textarea } from '../components/ui/textarea';
 
 const contactInfo = [
     {
