@@ -17,22 +17,22 @@ const contactInfo = [
     {
         icon: MapPin,
         title: "Visit Us",
-        details: "123 Energy Street, Dhaka, Bangladesh"
+        details: "BTMC Bhaban (7th Floor), 7-9 Kawran Bazar, Dhaka- 1217, Bangladesh"
     },
     {
         icon: Phone,
         title: "Call Us",
-        details: "+880 1234 567890"
+        details: "+880-2-8189244, +880-2-8189321, +880-2-58155623"
     },
     {
         icon: Mail,
         title: "Email Us",
-        details: "info@coastalgas.com"
+        details: "info@coastalgas.com.bd"
     },
     {
         icon: Clock,
         title: "Working Hours",
-        details: "Mon - Fri: 9:00 AM - 6:00 PM"
+        details: "Sun - Thu: 9:00 AM - 6:00 PM"
     }
 ];
 
@@ -70,7 +70,7 @@ export default function ContactPage() {
                                         <div className="grid md:grid-cols-2 gap-4">
                                             <div>
                                                 <label className="block text-sm font-medium mb-2">First Name</label>
-                                                <Input placeholder="John" />
+                                                <Input placeholder="John" className="placeholder:text-gray-400" />
                                             </div>
                                             <div>
                                                 <label className="block text-sm font-medium mb-2">Last Name</label>
@@ -79,11 +79,11 @@ export default function ContactPage() {
                                         </div>
                                         <div>
                                             <label className="block text-sm font-medium mb-2">Email</label>
-                                            <Input type="email" placeholder="john@example.com" />
+                                            <Input type="email" placeholder="john@example.com" className="placeholder:text-gray-400" />
                                         </div>
                                         <div>
                                             <label className="block text-sm font-medium mb-2">Message</label>
-                                            <Textarea placeholder="Your message..." className="h-32" />
+                                            <Textarea placeholder="Your message..." className="h-32 placeholder:text-gray-400" />
                                         </div>
                                         <Button className="w-full">
                                             Send Message <Send className="ml-2 w-4 h-4" />

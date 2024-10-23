@@ -20,17 +20,20 @@ export default function Footer() {
                     <div>
                         <h3 className="text-lg font-semibold mb-4">Contact Information</h3>
                         <ul className="space-y-2">
-                            <li className="flex items-center">
-                                <MapPin className="h-5 w-5 mr-2" />
-                                123 Energy Street, Dhaka, Bangladesh
+                            <li className="flex items-start">
+                                <MapPin size={20} className="mr-2" />
+                                <span className='text-sm'> BTMC Bhaban (7th Floor)
+                                    7-9 Kawran Bazar
+                                    Dhaka- 1217, Bangladesh</span>
+
                             </li>
-                            <li className="flex items-center">
-                                <Phone className="h-5 w-5 mr-2" />
-                                +880 1234 567890
+                            <li className="flex items-start">
+                                <Phone size={20} className="mr-2" />
+                                <span className='text-sm'> +880-2-8189244, +880-2-8189321, +880-2-58155623</span>
                             </li>
-                            <li className="flex items-center">
-                                <Mail className="h-5 w-5 mr-2" />
-                                info@coastalgas.com
+                            <li className="flex items-start">
+                                <Mail size={20} className="mr-2" />
+                                <span className='text-sm'>info@coastalgas.com.bd</span>
                             </li>
                         </ul>
                     </div>

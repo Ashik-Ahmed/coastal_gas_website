@@ -27,13 +27,13 @@ export default function Hero() {
                     className="max-w-4xl mx-auto text-center text-white"
                 >
                     <h1 className="text-6xl font-bold mb-6 leading-tight">
-                        Powering Tomorrow's
+                        Fueling Bangladesh with
                         <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-cyan-300">
-                            {" "}Energy Solutions
+                            {" "}Lubricants and LPG
                         </span>
                     </h1>
                     <p className="text-xl mb-8 text-gray-200">
-                        Leading Bangladesh's energy sector with innovative and sustainable solutions since 2010
+                        Trusted since 2010, providing quality products and expert services to power industries nationwide.
                     </p>
                     <div className="flex gap-4 justify-center">
                         <Button
