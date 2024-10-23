@@ -1,5 +1,8 @@
 import Image from 'next/image';
 import { Card, CardContent } from './ui/card';
+import { Button } from './ui/button';
+import { ChevronRight } from 'lucide-react';
+import Link from 'next/link';
 
 export default function OurShip() {
     return (
@@ -9,28 +12,28 @@ export default function OurShip() {
                 <div className="grid md:grid-cols-2 gap-8 items-center">
                     <div className="grid grid-cols-2 gap-4">
                         <Image
-                            src="https://source.unsplash.com/random/600x400/?oil,tanker"
+                            src="/ship.jpg"
                             alt="MT Pride of Shah Jalal - Full View"
                             width={600}
                             height={400}
                             className="rounded-lg"
                         />
                         <Image
-                            src="https://source.unsplash.com/random/600x400/?ship,deck"
+                            src="/ship2.jpg"
                             alt="MT Pride of Shah Jalal - Deck"
                             width={600}
                             height={400}
                             className="rounded-lg"
                         />
                         <Image
-                            src="https://source.unsplash.com/random/600x400/?ship,bridge"
+                            src="/ship3.jpg"
                             alt="MT Pride of Shah Jalal - Bridge"
                             width={600}
                             height={400}
                             className="rounded-lg"
                         />
                         <Image
-                            src="https://source.unsplash.com/random/600x400/?ship,engine"
+                            src="/ship4.jpg"
                             alt="MT Pride of Shah Jalal - Engine Room"
                             width={600}
                             height={400}
@@ -40,7 +43,7 @@ export default function OurShip() {
                     <div>
                         <Card>
                             <CardContent className="p-6">
-                                <h3 className="text-2xl font-bold mb-4">Vessel Details</h3>
+                                {/* <h3 className="text-2xl font-bold mb-4">Vessel Details</h3> */}
                                 <ul className="space-y-2">
                                     <li><strong>Length:</strong> 120 meters</li>
                                     <li><strong>Breadth:</strong> 20 meters</li>
@@ -51,6 +54,8 @@ export default function OurShip() {
                                 <blockquote className="mt-6 border-l-4 border-blue-600 pl-4 italic">
                                     "Ensuring safe and efficient transportation of refined oil across Bangladesh."
                                 </blockquote>
+
+                                <Button className="mt-6"> <Link href="/vessel">See Details</Link> <ChevronRight className="ml-2 w-4 h-4" /> </Button>
                             </CardContent>
                         </Card>
                     </div>

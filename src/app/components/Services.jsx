@@ -57,7 +57,7 @@ export default function Services() {
                             viewport={{ once: true }}
                             transition={{ duration: 0.6, delay: index * 0.1 }}
                         >
-                            <Card className="service-card h-full p-6 cursor-pointer group">
+                            <Card className="service-card h-full p-6 cursor-pointer group hover:border-l-8 hover:border-blue-600">
                                 <div className={`w-16 h-16 rounded-2xl bg-gradient-to-r ${service.color} p-4 mb-6`}>
                                     <service.icon className="w-full h-full text-white" />
                                 </div>

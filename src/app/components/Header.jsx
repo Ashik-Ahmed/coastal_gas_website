@@ -11,6 +11,7 @@ const navItems = [
     { href: '/', label: 'Home' },
     { href: '/about', label: 'About Us' },
     { href: '/services', label: 'Services' },
+    { href: '/vessel', label: 'Vessel' },
     { href: '/contact', label: 'Contact' }
 ];
 
@@ -36,7 +37,7 @@ export default function Header() {
                                 {item.label}
                             </Link>
                         ))}
-                        <Button>Request a Quote</Button>
+                        <Button><Link href="/contact">Request a Quote</Link></Button>
                     </nav>
 
                     {/* Mobile Menu Button */}
@@ -74,7 +75,7 @@ export default function Header() {
                                     {item.label}
                                 </Link>
                             ))}
-                            <Button className="w-full">Request a Quote</Button>
+                            <Button className="w-full"><Link href="/contact">Request a Quote</Link></Button>
                         </nav>
                     </motion.div>
                 )}

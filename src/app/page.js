@@ -14,7 +14,7 @@ export default function Home() {
       <Services />
       <OurShip />
       <MissionVision />
-      <News />
+      {/* <News /> */}
       <CallToAction />
     </>
   );
