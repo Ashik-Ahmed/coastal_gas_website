@@ -52,7 +52,7 @@ export default function OurShip() {
                                     <li><strong>Type:</strong> Oil/Chemical Tanker</li>
                                 </ul>
                                 <blockquote className="mt-6 border-l-4 border-blue-600 pl-4 italic">
-                                    "Ensuring safe and efficient transportation of refined oil across Bangladesh."
+                                    &quot; Ensuring safe and efficient transportation of refined oil across Bangladesh.&quot;
                                 </blockquote>
 
                                 <Button className="mt-6"> <Link href="/vessel">See Details</Link> <ChevronRight className="ml-2 w-4 h-4" /> </Button>

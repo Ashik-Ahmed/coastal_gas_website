@@ -27,7 +27,7 @@ export default function AboutUs() {
                             <Card>
                                 <CardContent className="p-4 text-center">
                                     <h3 className="text-2xl font-bold text-blue-600">1000+</h3>
-                                    <p>Success History</p>
+                                    <p>Success Stories</p>
                                 </CardContent>
                             </Card>
                         </div>

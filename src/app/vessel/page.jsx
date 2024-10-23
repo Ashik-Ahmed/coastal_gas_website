@@ -162,7 +162,7 @@ export default function VesselPage() {
                                 <CardContent>
                                     <p className="text-2xl font-bold text-blue-600">12 Crore BDT</p>
                                     <p className="text-gray-600 mt-2">
-                                        Our vessel represents a significant investment in Bangladesh's maritime infrastructure,
+                                        Our vessel represents a significant investment in Bangladesh&#39;s maritime infrastructure,
                                         equipped with state-of-the-art technology and safety features.
                                     </p>
                                 </CardContent>

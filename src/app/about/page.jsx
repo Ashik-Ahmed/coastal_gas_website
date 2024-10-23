@@ -11,10 +11,10 @@ import {
 import { Card, CardContent } from '../components/ui/card';
 
 const stats = [
-    { icon: Users, value: '500+', label: 'Employees' },
+    { icon: Users, value: '50+', label: 'Employees' },
     { icon: Target, value: '14+', label: 'Years Experience' },
-    { icon: Trophy, value: '50+', label: 'Awards' },
-    { icon: Award, value: '1000+', label: 'Clients' }
+    { icon: Award, value: '500+', label: 'Clients' },
+    { icon: Trophy, value: '1000+', label: 'Success Stories' },
 ];
 
 export default function AboutPage() {
@@ -30,7 +30,7 @@ export default function AboutPage() {
                     >
                         <h1 className="text-5xl font-bold mb-6">About Coastal Gas Ltd.</h1>
                         <p className="text-xl text-gray-200 max-w-2xl mx-auto">
-                            Leading Bangladesh's energy sector with innovation and excellence
+                            Leading Bangladesh&#39;s energy sector with innovation and excellence
                         </p>
                     </motion.div>
                 </div>
@@ -46,8 +46,8 @@ export default function AboutPage() {
                         >
                             <h2 className="text-4xl font-bold mb-6">Our Journey</h2>
                             <p className="text-lg text-gray-600 mb-6">
-                                Since our establishment in 2010, Coastal Gas Ltd. has been at the forefront of Bangladesh's energy sector.
-                                We've grown from a small local supplier to one of the country's leading energy solution providers.
+                                Since our establishment in 2010, Coastal Gas Ltd. has been at the forefront of Bangladesh&#39;s energy sector.
+                                We have grown from a small local supplier to one of the country&#39;s leading energy solution providers.
                             </p>
                             <p className="text-lg text-gray-600">
                                 Our commitment to quality, safety, and innovation has earned us the trust of thousands of clients across
@@ -61,7 +61,7 @@ export default function AboutPage() {
                             className="relative h-[400px] rounded-2xl overflow-hidden"
                         >
                             <Image
-                                src="https://images.unsplash.com/photo-1581094794329-c8112c4e5190?auto=format&fit=crop&q=80"
+                                src="/about_us.jpg"
                                 alt="Our facility"
                                 layout="fill"
                                 objectFit="cover"
