@@ -11,6 +11,7 @@ import {
 } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '../components/ui/card';
 import { Button } from '../components/ui/button';
+import Link from 'next/link';
 
 const services = [
     {
@@ -110,9 +111,11 @@ export default function ServicesPage() {
                                                 </li>
                                             ))}
                                         </ul>
-                                        <Button className="mt-6 w-full">
-                                            Learn More <ArrowRight className="ml-2 w-4 h-4" />
-                                        </Button>
+                                        <Link href="/contact" className='flex items-center'>
+                                            <Button className="mt-6 w-full">
+                                                Learn More <ArrowRight className="ml-2 w-4 h-4" />
+                                            </Button>
+                                        </Link>
                                     </CardContent>
                                 </Card>
                             </motion.div>
