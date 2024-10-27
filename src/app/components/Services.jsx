@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import { Droplet, Truck, Ship, Globe, ChevronRight } from 'lucide-react';
 import { Card } from './ui/card';
+import Link from 'next/link';
 
 const services = [
     {
@@ -57,15 +58,15 @@ export default function Services() {
                             viewport={{ once: true }}
                             transition={{ duration: 0.6, delay: index * 0.1 }}
                         >
-                            <Card className="service-card h-full p-6 cursor-pointer group hover:border-l-8 hover:border-blue-600">
+                            <Card className="service-card h-full p-6 group hover:border-l-8 hover:border-blue-600">
                                 <div className={`w-16 h-16 rounded-2xl bg-gradient-to-r ${service.color} p-4 mb-6`}>
                                     <service.icon className="w-full h-full text-white" />
                                 </div>
                                 <h3 className="text-xl font-semibold mb-3">{service.title}</h3>
                                 <p className="text-gray-600 mb-4">{service.description}</p>
-                                <div className="flex items-center text-blue-600 group-hover:text-blue-700">
+                                <Link href="/services" className="flex items-center text-blue-600 group-hover:text-blue-700">
                                     Learn More <ChevronRight className="ml-2 w-4 h-4" />
-                                </div>
+                                </Link>
                             </Card>
                         </motion.div>
                     ))}

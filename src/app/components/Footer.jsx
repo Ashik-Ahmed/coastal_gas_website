@@ -10,11 +10,10 @@ export default function Footer() {
                         <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
                         <ul className="space-y-2">
                             <li><Link href="/" className="hover:text-blue-400">Home</Link></li>
-                            <li><Link href="#about" className="hover:text-blue-400">About Us</Link></li>
-                            <li><Link href="#services" className="hover:text-blue-400">Services</Link></li>
-                            <li><Link href="#ship" className="hover:text-blue-400">Our Ship</Link></li>
-                            <li><Link href="#news" className="hover:text-blue-400">News</Link></li>
-                            <li><Link href="#contact" className="hover:text-blue-400">Contact Us</Link></li>
+                            <li><Link href="/about" className="hover:text-blue-400">About Us</Link></li>
+                            <li><Link href="/services" className="hover:text-blue-400">Services</Link></li>
+                            <li><Link href="/vessel" className="hover:text-blue-400">Vessel</Link></li>
+                            <li><Link href="/contact" className="hover:text-blue-400">Contact Us</Link></li>
                         </ul>
                     </div>
                     <div>
@@ -25,7 +24,6 @@ export default function Footer() {
                                 <span className='text-sm'> BTMC Bhaban (7th Floor)
                                     7-9 Kawran Bazar
                                     Dhaka- 1217, Bangladesh</span>
-
                             </li>
                             <li className="flex items-start">
                                 <Phone size={20} className="mr-2" />
