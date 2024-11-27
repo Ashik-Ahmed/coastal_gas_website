@@ -67,7 +67,7 @@ export default function VesselPage() {
                                 <motion.div
                                     initial={{ opacity: 0, scale: 0.9 }}
                                     whileInView={{ opacity: 1, scale: 1 }}
-                                    className="relative h-[300px] rounded-xl overflow-hidden"
+                                    className="relative h-[300px] overflow-hidden"
                                 >
                                     <Image
                                         src="/ship.jpg"
@@ -80,7 +80,7 @@ export default function VesselPage() {
                                 <motion.div
                                     initial={{ opacity: 0, scale: 0.9 }}
                                     whileInView={{ opacity: 1, scale: 1 }}
-                                    className="relative h-[300px] rounded-xl overflow-hidden"
+                                    className="relative h-[300px] overflow-hidden"
                                 >
                                     <Image
                                         src="/ship2.jpg"
@@ -93,7 +93,7 @@ export default function VesselPage() {
                                 <motion.div
                                     initial={{ opacity: 0, scale: 0.9 }}
                                     whileInView={{ opacity: 1, scale: 1 }}
-                                    className="relative h-[300px] rounded-xl overflow-hidden"
+                                    className="relative h-[300px] overflow-hidden"
                                 >
                                     <Image
                                         src="/ship3.jpg"
@@ -108,67 +108,80 @@ export default function VesselPage() {
 
                         <TabsContent value="specs">
                             <div className="grid md:grid-cols-2 gap-8">
-                                <Card>
-                                    <CardHeader>
-                                        <CardTitle className="flex items-center gap-2">
-                                            <Ship className="h-6 w-6 text-blue-600" />
-                                            Technical Specifications
-                                        </CardTitle>
-                                    </CardHeader>
-                                    <CardContent>
-                                        <div className="grid grid-cols-2 gap-4">
-                                            {specifications.map((spec, index) => (
-                                                <div key={index} className="flex items-center gap-2">
-                                                    {/* <spec.icon className="h-5 w-5 text-blue-600" /> */}
-                                                    <div>
-                                                        <p className="text-sm text-gray-500">{spec.label}</p>
-                                                        <p className="font-semibold">{spec.value}</p>
+                                <motion.div
+                                    initial={{ opacity: 0, scale: 0.9 }}
+                                    whileInView={{ opacity: 1, scale: 1 }}
+                                >
+                                    <Card className="bg-blue-200">
+                                        <CardHeader>
+                                            <CardTitle className="flex items-center gap-2">
+                                                <Ship className="h-6 w-6 text-blue-600" />
+                                                Technical Specifications
+                                            </CardTitle>
+                                        </CardHeader>
+                                        <CardContent>
+                                            <div className="grid grid-cols-2 gap-4">
+                                                {specifications.map((spec, index) => (
+                                                    <div key={index} className="flex items-center gap-2">
+                                                        {/* <spec.icon className="h-5 w-5 text-blue-600" /> */}
+                                                        <div>
+                                                            <p className="text-sm text-gray-500">{spec.label}</p>
+                                                            <p className="font-semibold">{spec.value}</p>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                            ))}
-                                        </div>
-                                    </CardContent>
-                                </Card>
-
-                                <Card>
+                                                ))}
+                                            </div>
+                                        </CardContent>
+                                    </Card>
+                                </motion.div>
+                                <motion.div
+                                    initial={{ opacity: 0, scale: 0.9 }}
+                                    whileInView={{ opacity: 1, scale: 1 }}
+                                >
+                                    <Card className="bg-green-200 h-full">
+                                        <CardHeader>
+                                            <CardTitle className="flex items-center gap-2">
+                                                <CheckCircle2 className="h-6 w-6 text-blue-600" />
+                                                Key Features
+                                            </CardTitle>
+                                        </CardHeader>
+                                        <CardContent>
+                                            <div className="grid grid-cols-2 gap-4">
+                                                {features.map((feature, index) => (
+                                                    <div key={index} className="flex items-center gap-2">
+                                                        <CheckCircle2 className="h-5 w-5 text-green-500" />
+                                                        <p>{feature}</p>
+                                                    </div>
+                                                ))}
+                                            </div>
+                                        </CardContent>
+                                    </Card>
+                                </motion.div>
+                            </div>
+                            <motion.div
+                                initial={{ opacity: 0, scale: 0.9 }}
+                                whileInView={{ opacity: 1, scale: 1 }}
+                            >
+                                <Card className="mt-8 bg-yellow-200">
                                     <CardHeader>
                                         <CardTitle className="flex items-center gap-2">
-                                            <CheckCircle2 className="h-6 w-6 text-blue-600" />
-                                            Key Features
+                                            <DollarSign className="h-6 w-6 text-blue-600" />
+                                            Vessel Value
                                         </CardTitle>
                                     </CardHeader>
                                     <CardContent>
-                                        <div className="grid grid-cols-2 gap-4">
-                                            {features.map((feature, index) => (
-                                                <div key={index} className="flex items-center gap-2">
-                                                    <CheckCircle2 className="h-5 w-5 text-green-500" />
-                                                    <p>{feature}</p>
-                                                </div>
-                                            ))}
-                                        </div>
+                                        <p className="text-2xl font-bold text-blue-600">12 Crore BDT</p>
+                                        <p className="text-gray-600 mt-2">
+                                            Our vessel represents a significant investment in Bangladesh&#39;s maritime infrastructure,
+                                            equipped with state-of-the-art technology and safety features.
+                                        </p>
                                     </CardContent>
                                 </Card>
-                            </div>
-
-                            <Card className="mt-8">
-                                <CardHeader>
-                                    <CardTitle className="flex items-center gap-2">
-                                        <DollarSign className="h-6 w-6 text-blue-600" />
-                                        Vessel Value
-                                    </CardTitle>
-                                </CardHeader>
-                                <CardContent>
-                                    <p className="text-2xl font-bold text-blue-600">12 Crore BDT</p>
-                                    <p className="text-gray-600 mt-2">
-                                        Our vessel represents a significant investment in Bangladesh&#39;s maritime infrastructure,
-                                        equipped with state-of-the-art technology and safety features.
-                                    </p>
-                                </CardContent>
-                            </Card>
+                            </motion.div>
                         </TabsContent>
                     </Tabs>
                 </div>
-            </section>
+            </section >
         </>
     );
 }
