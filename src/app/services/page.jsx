@@ -237,6 +237,43 @@ export default function ServicesPage() {
                                 </CardContent>
                             </Card>
                         </motion.div>
+
+                        <motion.div
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ delay: 3 * 0.1 }}
+                        >
+                            <Card className="h-full">
+                                <CardHeader>
+                                    <div className={`w-16 h-16 rounded-2xl bg-gradient-to-r from-green-500 to-emerald-500 p-4 mb-4`}>
+                                        <Ship className="w-full h-full text-white" />
+                                    </div>
+                                    <CardTitle className="text-2xl mb-2">Shipping & Logistics</CardTitle>
+                                    <p className="text-gray-600">
+                                        We offer comprehensive shipping solutions, especially documentation and specialized shipping management. Supported by advanced Fender services to protect through the company&apos;s active role in shipping and logistics, our expertise is providing the efficient, secure, and timely transportation of its products. Our capabilities are further strengthened by assets like the MT Pride of Shah Jalal, which currently transports refined oil for Padma Oil Company, showcasing our dedication to excellence in shipping operations.
+                                    </p>
+                                </CardHeader>
+                            </Card>
+                        </motion.div>
+                        <motion.div
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ delay: 3 * 0.1 }}
+                        >
+                            <Card className="h-full">
+                                <CardHeader>
+                                    <div className={`w-16 h-16 rounded-2xl bg-gradient-to-r from-orange-500 to-yellow-500 p-4 mb-4`}>
+                                        <Globe className="w-full h-full text-white" />
+                                    </div>
+                                    <CardTitle className="text-2xl mb-2">Carbon Credit Trading</CardTitle>
+                                    <p className="text-gray-600">
+                                        Coastal Gas actively engages in carbon credit trading, aligning economic growth with environmental responsibility. By participating in global carbon markets, we facilitate carbon credits&apos; purchase, sale, and exchange, helping industries offset their emissions and meet sustainability goals. Our approach supports cleaner energy solutions and fosters innovation and investment in emission-reduction projects, contributing to a greener, more sustainable future for Bangladesh and beyond.
+                                    </p>
+                                </CardHeader>
+                            </Card>
+                        </motion.div>
                     </div>
                 </div>
             </section>
