@@ -92,18 +92,18 @@ export default function ServicesPage() {
                         className="text-center text-white"
                     >
                         <h1 className="text-5xl font-bold mb-6">Our Expertise</h1>
-                        <p className="text-xl text-gray-200 max-w-6xl mx-auto">
+                        <p className="md:text-xl text-gray-200 max-w-6xl mx-auto">
                             Reliable Energy, Seamlessly Delivered.
                         </p>
-                        <p className="text-xl text-gray-200 max-w-6xl mx-auto">
+                        <p className="md:text-xl text-gray-200 max-w-6xl mx-auto">
                             With us, you experience the power of innovation, tailored solutions, safety and sustainability.
                         </p>
                     </motion.div>
                 </div>
             </section>
 
-            <section className="py-24">
-                <div className="container mx-auto px-4">
+            <section className="py-24 w-full">
+                <div className="container mx-auto px-2 md:px-4">
                     <div className="grid gap-8">
                         <motion.div
                             initial={{ opacity: 0, y: 20 }}
@@ -139,102 +139,105 @@ export default function ServicesPage() {
                                     <p className="text-gray-600 mt-4">
                                         Engine oils, Tiger Super supplied Hyrax, setting a new standard in the regional market.
                                     </p>
-                                </CardHeader>
-                                <CardContent>
-                                    <div className="container mx-auto px-4 py-8">
-                                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                                            <div className="relative overflow-hidden rounded-lg shadow-lg transition-transform duration-300 hover:scale-105">
-                                                <Image
-                                                    src="/vivo.png"
-                                                    alt="Vivo supreme bike 4T"
-                                                    width={500}
-                                                    height={500}
-                                                    className="w-full h-64 object-contain bg-gray-200 transition-transform duration-300 hover:scale-110"
-                                                />
-                                                <div className="absolute inset-0 bg-gradient-to-t from-blue-500/60 to-transparent opacity-0 transition-opacity duration-300 hover:opacity-100">
+                                    <div>
+                                        <div className="container mx-auto px-4 py-8">
+                                            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                                                <div className="relative overflow-hidden rounded-lg shadow-lg transition-transform duration-300 hover:scale-105">
+                                                    <Image
+                                                        src="/vivo.png"
+                                                        alt="Vivo supreme bike 4T"
+                                                        width={500}
+                                                        height={500}
+                                                        loading="lazy"
+                                                        className="w-full h-64 object-contain bg-gray-200 transition-transform duration-300 hover:scale-110"
+                                                    />
+                                                    <div className="absolute inset-0 bg-gradient-to-t from-blue-500/60 to-transparent opacity-0 transition-opacity duration-300 hover:opacity-100">
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div className="relative overflow-hidden rounded-lg shadow-lg transition-transform duration-300 hover:scale-105">
-                                                <Image
-                                                    src="/hyrax.png"
-                                                    alt="Tiger Super"
-                                                    width={500}
-                                                    height={500}
-                                                    className="w-full h-64 object-contain bg-gray-200 transition-transform duration-300 hover:scale-110"
-                                                />
-                                                <div className="absolute inset-0 bg-gradient-to-t from-blue-500/60 to-transparent opacity-0 transition-opacity duration-300 hover:opacity-100">
+                                                <div className="relative overflow-hidden rounded-lg shadow-lg transition-transform duration-300 hover:scale-105">
+                                                    <Image
+                                                        src="/hyrax.png"
+                                                        alt="Tiger Super"
+                                                        width={500}
+                                                        height={500}
+                                                        loading="lazy"
+                                                        className="w-full h-64 object-contain bg-gray-200 transition-transform duration-300 hover:scale-110"
+                                                    />
+                                                    <div className="absolute inset-0 bg-gradient-to-t from-blue-500/60 to-transparent opacity-0 transition-opacity duration-300 hover:opacity-100">
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div className="relative overflow-hidden rounded-lg shadow-lg transition-transform duration-300 hover:scale-105">
-                                                <Image
-                                                    src="/mabanol.png"
-                                                    alt="Mabanol"
-                                                    width={500}
-                                                    height={500}
-                                                    className="w-full h-64 object-contain bg-gray-200 transition-transform duration-300 hover:scale-110"
-                                                />
-                                                <div className="absolute inset-0 bg-gradient-to-t from-blue-500/60 to-transparent opacity-0 transition-opacity duration-300 hover:opacity-100">
+                                                <div className="relative overflow-hidden rounded-lg shadow-lg transition-transform duration-300 hover:scale-105">
+                                                    <Image
+                                                        src="/mabanol.png"
+                                                        alt="Mabanol"
+                                                        width={500}
+                                                        height={500}
+                                                        loading="lazy"
+                                                        className="w-full h-64 object-contain bg-gray-200 transition-transform duration-300 hover:scale-110"
+                                                    />
+                                                    <div className="absolute inset-0 bg-gradient-to-t from-blue-500/60 to-transparent opacity-0 transition-opacity duration-300 hover:opacity-100">
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
 
-                                    <div className="p-6 font-sans">
-                                        {/* Company Partnership Details */}
-                                        <section className="mb-10">
-                                            <h2 className="text-2xl font-bold mb-4">Company Partnership Details</h2>
-                                            <table className="w-full border-collapse border border-gray-300 text-left">
-                                                <thead>
-                                                    <tr className="bg-blue-200">
-                                                        <th className="border border-gray-300 px-4 py-2">Brand</th>
-                                                        <th className="border border-gray-300 px-4 py-2">Year of Agreement</th>
-                                                        <th className="border border-gray-300 px-4 py-2">Country of Origin</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    {partnershipDetails.map((row, index) => (
-                                                        <tr key={index} className="hover:bg-gray-50">
-                                                            <td className="border border-gray-300 px-4 py-2">{row.brand}</td>
-                                                            <td className="border border-gray-300 px-4 py-2">{row.year}</td>
-                                                            <td className="border border-gray-300 px-4 py-2">{row.country}</td>
+                                        <div className="p-6 font-sans">
+                                            {/* Company Partnership Details */}
+                                            <section className="mb-10">
+                                                <h2 className="text-xl font-bold mb-4">Company Partnership Details</h2>
+                                                <table className="w-full border-collapse border border-gray-300 text-left">
+                                                    <thead>
+                                                        <tr className="bg-blue-200">
+                                                            <th className="border border-gray-300 px-4 py-2">Brand</th>
+                                                            <th className="border border-gray-300 px-4 py-2">Year of Agreement</th>
+                                                            <th className="border border-gray-300 px-4 py-2">Country of Origin</th>
                                                         </tr>
-                                                    ))}
-                                                </tbody>
-                                            </table>
-                                        </section>
+                                                    </thead>
+                                                    <tbody>
+                                                        {partnershipDetails.map((row, index) => (
+                                                            <tr key={index} className="hover:bg-gray-50">
+                                                                <td className="border border-gray-300 px-4 py-2">{row.brand}</td>
+                                                                <td className="border border-gray-300 px-4 py-2">{row.year}</td>
+                                                                <td className="border border-gray-300 px-4 py-2">{row.country}</td>
+                                                            </tr>
+                                                        ))}
+                                                    </tbody>
+                                                </table>
+                                            </section>
 
-                                        {/* Product Variety & Quantity Supplied */}
-                                        <section>
-                                            <h2 className="text-2xl font-bold mb-4">Product Variety & Quantity Supplied</h2>
-                                            <p className="mb-4">
-                                                Through our specialized division, we provide a variety of engine oil
-                                                grades from these renowned brands tailored to meet diverse automotive
-                                                and industrial requirements. The table below outlines the available
-                                                types and quantities:
-                                            </p>
-                                            <table className="w-full border-collapse border border-gray-300 text-left">
-                                                <thead>
-                                                    <tr className="bg-blue-200">
-                                                        <th className="border border-gray-300 px-4 py-2">SAE Grade</th>
-                                                        <th className="border border-gray-300 px-4 py-2">Vivo (Liters)</th>
-                                                        <th className="border border-gray-300 px-4 py-2">Hyrax (Liters)</th>
-                                                        <th className="border border-gray-300 px-4 py-2">Mabanol (Liters)</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    {productData.map((row, index) => (
-                                                        <tr key={index} className="hover:bg-gray-50">
-                                                            <td className="border border-gray-300 px-4 py-2">{row.grade}</td>
-                                                            <td className="border border-gray-300 px-4 py-2">{row.vivo}</td>
-                                                            <td className="border border-gray-300 px-4 py-2">{row.hyrax}</td>
-                                                            <td className="border border-gray-300 px-4 py-2">{row.mabanol}</td>
+                                            {/* Product Variety & Quantity Supplied */}
+                                            <section>
+                                                <h2 className="text-xl font-bold mb-4">Product Variety & Quantity Supplied</h2>
+                                                <p className="mb-4">
+                                                    Through our specialized division, we provide a variety of engine oil
+                                                    grades from these renowned brands tailored to meet diverse automotive
+                                                    and industrial requirements. The table below outlines the available
+                                                    types and quantities:
+                                                </p>
+                                                <table className="w-full border-collapse border border-gray-300 text-left">
+                                                    <thead>
+                                                        <tr className="bg-blue-200">
+                                                            <th className="border border-gray-300 px-2 md:px-4 py-2">SAE Grade</th>
+                                                            <th className="border border-gray-300 px-2 md:px-4 py-2">Vivo (Liters)</th>
+                                                            <th className="border border-gray-300 px-2 md:px-4 py-2">Hyrax (Liters)</th>
+                                                            <th className="border border-gray-300 px-2 md:px-4 py-2">Mabanol (Liters)</th>
                                                         </tr>
-                                                    ))}
-                                                </tbody>
-                                            </table>
-                                        </section>
+                                                    </thead>
+                                                    <tbody>
+                                                        {productData.map((row, index) => (
+                                                            <tr key={index} className="hover:bg-gray-50">
+                                                                <td className="border border-gray-300 px-2 md:px-4 py-2">{row.grade}</td>
+                                                                <td className="border border-gray-300 px-2 md:px-4 py-2">{row.vivo}</td>
+                                                                <td className="border border-gray-300 px-2 md:px-4 py-2">{row.hyrax}</td>
+                                                                <td className="border border-gray-300 px-2 md:px-4 py-2">{row.mabanol}</td>
+                                                            </tr>
+                                                        ))}
+                                                    </tbody>
+                                                </table>
+                                            </section>
+                                        </div>
                                     </div>
-                                </CardContent>
+                                </CardHeader>
                             </Card>
                         </motion.div>
 
