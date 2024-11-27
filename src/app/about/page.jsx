@@ -80,7 +80,7 @@ export default function AboutPage() {
 
             <section id="about-us" className="container mx-auto py-16 px-4">
                 {/* <h2 className="text-4xl font-bold text-center mb-12 text-gray-800">About Us</h2> */}
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     {/* Mission Card */}
                     <div className="bg-blue-100 shadow-md rounded-lg p-6 hover:shadow-lg transition">
                         <div className="flex items-center justify-center text-blue-600 text-4xl mb-4">
@@ -105,20 +105,6 @@ export default function AboutPage() {
                             We vision to be Bangladesh’s foremost energy solutions provider, delivering a diverse
                             portfolio of products and services that adapt to our customers’ changing needs while
                             fostering a sustainable and thriving future for the nation.
-                        </p>
-                    </div>
-
-                    {/* Expertise Card */}
-                    <div className="bg-yellow-100 shadow-md rounded-lg p-6 hover:shadow-lg transition">
-                        <div className="flex items-center justify-center text-yellow-600 text-4xl mb-4">
-                            <Lightbulb size={48} />
-                        </div>
-                        <h3 className="text-2xl font-semibold text-yellow-700 mb-3 text-center">Our Expertise</h3>
-                        <p className="text-gray-700 text-center">
-                            Reliable Energy, Seamlessly Delivered.
-                            <br />
-                            With us, you experience the power of innovation, tailored solutions, safety, and
-                            sustainability.
                         </p>
                     </div>
                 </div>
