@@ -23,7 +23,7 @@ const specifications = [
     { icon: Ship, label: "Type", value: "Oil Tanker" },
     { icon: Engine, label: "Engine", value: "China Diesel (2Nos)" },
     { icon: Engine, label: "Horse Power", value: "720X2=1440 BHP" },
-    { icon: Shield, label: "Classification", value: "RINA" }
+    // { icon: Shield, label: "Classification", value: "RINA" }
 ];
 
 const features = [
@@ -32,9 +32,7 @@ const features = [
     "Double Bottom Safety",
     "1250 MT Capacity",
     "Advanced Navigation Systems",
-    "24/7 Vessel Tracking",
-    "Experienced Crew",
-    "Regular Maintenance"
+    "Under the classification of IR"
 ];
 
 export default function VesselPage() {
@@ -48,9 +46,9 @@ export default function VesselPage() {
                         animate={{ opacity: 1, y: 0 }}
                         className="text-center text-white"
                     >
-                        <h1 className="text-5xl font-bold mb-6">MT Pride of Shah Jalal</h1>
+                        <h1 className="text-5xl font-bold mb-6">Our Vessel</h1>
                         <p className="text-xl text-gray-200 max-w-3xl mx-auto">
-                            Our flagship vessel, currently serving Padma Oil Company Ltd. with refined oil transportation
+                            Coastal Gas Limited proudly owns the MT Pride of Shah Jalal, a vessel currently dedicated to transporting refined oil on behalf of Padma Oil Company Ltd. This strategic asset underscores our capability to manage critical logistics efficiently, ensuring timely and secure delivery of energy resources.
                         </p>
                     </motion.div>
                 </div>
