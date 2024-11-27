@@ -6,6 +6,7 @@ import { Droplet, Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Button } from './ui/button';
 import Image from 'next/image';
+import { usePathname } from 'next/navigation';
 
 const navItems = [
     { href: '/', label: 'Home' },
@@ -16,6 +17,7 @@ const navItems = [
 
 export default function Header() {
     const [isOpen, setIsOpen] = useState(false);
+    const currentPath = usePathname();
 
     return (
         <header className="sticky top-0 left-0 w-full bg-blue-900 backdrop-blur-md shadow-sm z-50">
@@ -31,7 +33,7 @@ export default function Header() {
                             <Link
                                 key={item.href}
                                 href={item.href}
-                                className="text-white hover:text-blue-600 transition-colors"
+                                className={`text-white hover:text-blue-600 transition-colors p-2 hover:bg-white ${currentPath === item.href ? 'font-bold border-b' : ''}`}
                             >
                                 {item.label}
                             </Link>
@@ -68,7 +70,7 @@ export default function Header() {
                                 <Link
                                     key={item.href}
                                     href={item.href}
-                                    className="text-white hover:text-blue-600 transition-colors py-2"
+                                    className={`text-white hover:text-blue-600 transition-colors w-fit p-2 hover:bg-white ${currentPath === item.href ? 'font-bold border-b' : ''}`}
                                     onClick={() => setIsOpen(false)}
                                 >
                                     {item.label}
