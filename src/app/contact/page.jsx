@@ -32,7 +32,7 @@ const contactInfo = [
     {
         icon: Clock,
         title: "Working Hours",
-        details: "Sun - Thu: 9:00 AM - 6:00 PM"
+        details: "Sun - Thu: 9:30 AM - 5:30 PM"
     }
 ];
 
@@ -117,7 +117,7 @@ export default function ContactPage() {
                                     <h3 className="text-lg font-semibold mb-4">Our Location</h3>
                                     <div className="aspect-video rounded-lg overflow-hidden">
                                         <iframe
-                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d233667.82239550783!2d90.25446899999999!3d23.780636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8b087026b81%3A0x8fa563bbdd5904c2!2sDhaka%2C%20Bangladesh!5e0!3m2!1sen!2sus!4v1709893183044!5m2!1sen!2sus"
+                                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3651.9095685543075!2d90.3914651!3d23.750604!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b897f9400001%3A0x7d74993af65c7dad!2sCarbon%20Holdings%20Ltd!5e0!3m2!1sen!2sbd!4v1732790622076!5m2!1sen!2sbd"
                                             width="100%"
                                             height="100%"
                                             style={{ border: 0 }}
