@@ -7,27 +7,31 @@ import Link from 'next/link';
 
 const services = [
     {
-        title: 'LPG Solutions',
+        title: 'LPG Processing and Distribution',
         description: 'State-of-the-art LPG processing and nationwide distribution network.',
         icon: Droplet,
+        link: "/services#lpg_process",
         color: 'from-blue-500 to-cyan-500'
     },
     {
-        title: 'Premium Lubricants',
+        title: 'Lubricating Oil Blending & Marketing',
         description: 'High-quality lubricants for automotive and industrial applications.',
         icon: Truck,
+        link: "/services#lubricant_oil",
         color: 'from-purple-500 to-pink-500'
     },
     {
-        title: 'Maritime Transport',
+        title: 'Shipping & Logistics',
         description: 'Efficient transportation with our modern vessel fleet.',
         icon: Ship,
+        link: "/services#shipping_and_logistics",
         color: 'from-green-500 to-emerald-500'
     },
     {
-        title: 'Global Trade',
+        title: 'Carbon Credit Trading',
         description: 'International sourcing and distribution of energy products.',
         icon: Globe,
+        link: "/services#carbon_credit_trading",
         color: 'from-orange-500 to-yellow-500'
     }
 ];
@@ -43,7 +47,7 @@ export default function Services() {
                     transition={{ duration: 0.6 }}
                     className="text-center mb-16"
                 >
-                    <h2 className="text-4xl font-bold mb-4">Our Services</h2>
+                    <h2 className="text-4xl font-bold mb-4">Key Services</h2>
                     <p className="text-xl text-gray-600 max-w-2xl mx-auto">
                         Comprehensive energy solutions tailored to meet your needs
                     </p>
@@ -64,7 +68,7 @@ export default function Services() {
                                 </div>
                                 <h3 className="text-xl font-semibold mb-3">{service.title}</h3>
                                 <p className="text-gray-600 mb-4">{service.description}</p>
-                                <Link href="/services" className="flex items-center text-blue-600 group-hover:text-blue-700">
+                                <Link href={service.link} className="flex items-center text-blue-600 group-hover:text-blue-700">
                                     Learn More <ChevronRight className="ml-2 w-4 h-4" />
                                 </Link>
                             </Card>

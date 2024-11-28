@@ -105,7 +105,8 @@ export default function ServicesPage() {
             <section className="py-24 w-full">
                 <div className="container mx-auto px-2 md:px-4">
                     <div className="grid gap-8">
-                        <motion.div
+                        <motion.section
+                            id="lpg_process"
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
@@ -120,8 +121,9 @@ export default function ServicesPage() {
                                     <p className="text-gray-600">Our LPG processing and distribution service is built on precision, safety, and a deep commitment to excellence. From sourcing and refining to seamless delivery, we ensure every step is designed to meet the highest industry standards. Being the supplier of clean, efficient, and reliable LPG solutions, we empower households, businesses, and industries across Bangladesh with a dependable energy source. We focus on sustainability, which drives progress while safeguarding the environment and delivering exceptional value to our consumers.</p>
                                 </CardHeader>
                             </Card>
-                        </motion.div>
-                        <motion.div
+                        </motion.section>
+                        <motion.section
+                            id="lubricant_oil"
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
@@ -239,9 +241,10 @@ export default function ServicesPage() {
                                     </div>
                                 </CardHeader>
                             </Card>
-                        </motion.div>
+                        </motion.section>
 
-                        <motion.div
+                        <motion.section
+                            id="shipping_and_logistics"
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
@@ -258,8 +261,9 @@ export default function ServicesPage() {
                                     </p>
                                 </CardHeader>
                             </Card>
-                        </motion.div>
-                        <motion.div
+                        </motion.section>
+                        <motion.section
+                            id="carbon_credit_trading"
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
@@ -276,7 +280,7 @@ export default function ServicesPage() {
                                     </p>
                                 </CardHeader>
                             </Card>
-                        </motion.div>
+                        </motion.section>
                     </div>
                 </div>
             </section>

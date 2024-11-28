@@ -26,13 +26,13 @@ export default function Hero() {
                     transition={{ duration: 0.8 }}
                     className="max-w-6xl mx-auto text-center text-white"
                 >
-                    <h1 className="text-xl font-bold mb-6 leading-tight">
+                    <h1 className="text-xl md:text-6xl font-bold mb-6 leading-tight">
                         Powering Progress,
-                        <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-cyan-300">
+                        <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-cyan-200">
                             {" "}Powering Growth
                         </span>
                     </h1>
-                    <p className="text-xl mb-8 text-gray-200">
+                    <p className="text-xl mb-8 text-white">
                         Enriching Lives With Energy For A Better Tomorrow
                     </p>
                     <div className="flex gap-4 justify-center">

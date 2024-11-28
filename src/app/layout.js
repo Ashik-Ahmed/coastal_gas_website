@@ -16,7 +16,9 @@ export default function RootLayout({ children }) {
     <html lang="en" className="scroll-smooth">
       <body className={inter.className} suppressHydrationWarning={true}>
         <Header />
-        <main className="min-h-screen">{children}</main>
+        <main className="min-h-screen">
+          {children}
+        </main>
         <Footer />
         <Toaster />
       </body>
