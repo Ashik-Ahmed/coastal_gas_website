@@ -61,6 +61,7 @@ export default function ServicesPage() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: 1 * 0.1 }}
+                            className="scroll-mt-16"
                         >
                             <Card className="h-full">
                                 <CardHeader>
@@ -80,6 +81,7 @@ export default function ServicesPage() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: 2 * 0.1 }}
+                            className="scroll-mt-16"
                         >
                             <Card className="h-full">
                                 <CardHeader>
@@ -201,6 +203,7 @@ export default function ServicesPage() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: 3 * 0.1 }}
+                            className="scroll-mt-16"
                         >
                             <Card className="h-full">
                                 <CardHeader>
@@ -220,6 +223,7 @@ export default function ServicesPage() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: 3 * 0.1 }}
+                            className="scroll-mt-16"
                         >
                             <Card className="h-full">
                                 <CardHeader>
