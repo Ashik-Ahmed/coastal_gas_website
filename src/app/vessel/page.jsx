@@ -70,7 +70,7 @@ export default function VesselPage() {
                                     className="relative h-[300px] overflow-hidden"
                                 >
                                     <Image
-                                        src="/ship.jpg"
+                                        src="/vessel/mt_pride_shah_jalal_1.jpg"
                                         alt="MT Pride of Shah Jalal - Front View"
                                         layout="fill"
                                         objectFit="cover"
@@ -83,7 +83,7 @@ export default function VesselPage() {
                                     className="relative h-[300px] overflow-hidden"
                                 >
                                     <Image
-                                        src="/ship2.jpg"
+                                        src="/vessel/mt_pride_shah_jalal_2.jpg"
                                         alt="MT Pride of Shah Jalal - Side View"
                                         layout="fill"
                                         objectFit="cover"
@@ -96,7 +96,46 @@ export default function VesselPage() {
                                     className="relative h-[300px] overflow-hidden"
                                 >
                                     <Image
-                                        src="/ship3.jpg"
+                                        src="/vessel/mt_pride_shah_jalal_3.jpg"
+                                        alt="MT Pride of Shah Jalal - Deck View"
+                                        layout="fill"
+                                        objectFit="cover"
+                                        className="transition-transform hover:scale-110 duration-500"
+                                    />
+                                </motion.div>
+                                <motion.div
+                                    initial={{ opacity: 0, scale: 0.9 }}
+                                    whileInView={{ opacity: 1, scale: 1 }}
+                                    className="relative h-[300px] overflow-hidden"
+                                >
+                                    <Image
+                                        src="/vessel/mt_pride_shah_jalal_4.jpeg"
+                                        alt="MT Pride of Shah Jalal - Deck View"
+                                        layout="fill"
+                                        objectFit="cover"
+                                        className="transition-transform hover:scale-110 duration-500"
+                                    />
+                                </motion.div>
+                                <motion.div
+                                    initial={{ opacity: 0, scale: 0.9 }}
+                                    whileInView={{ opacity: 1, scale: 1 }}
+                                    className="relative h-[300px] overflow-hidden"
+                                >
+                                    <Image
+                                        src="/vessel/mt_pride_shah_jalal_5.jpeg"
+                                        alt="MT Pride of Shah Jalal - Deck View"
+                                        layout="fill"
+                                        objectFit="cover"
+                                        className="transition-transform hover:scale-110 duration-500"
+                                    />
+                                </motion.div>
+                                <motion.div
+                                    initial={{ opacity: 0, scale: 0.9 }}
+                                    whileInView={{ opacity: 1, scale: 1 }}
+                                    className="relative h-[300px] overflow-hidden"
+                                >
+                                    <Image
+                                        src="/vessel/mt_pride_shah_jalal_6.jpeg"
                                         alt="MT Pride of Shah Jalal - Deck View"
                                         layout="fill"
                                         objectFit="cover"
