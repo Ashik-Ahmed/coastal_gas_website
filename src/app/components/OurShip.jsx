@@ -55,7 +55,7 @@ export default function OurShip() {
                                     &quot; Ensuring safe and efficient transportation of refined oil across Bangladesh.&quot;
                                 </blockquote>
 
-                                <Button className="mt-6"> <Link href="/vessel">See Details</Link> <ChevronRight className="ml-2 w-4 h-4" /> </Button>
+                                <Button className="mt-6 bg-blue-900"> <Link href="/vessel">See Details</Link> <ChevronRight className="ml-2 w-4 h-4" /> </Button>
                             </CardContent>
                         </Card>
                     </div>

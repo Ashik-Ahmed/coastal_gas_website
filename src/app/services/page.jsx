@@ -14,56 +14,6 @@ import { Button } from '../components/ui/button';
 import Link from 'next/link';
 import Image from 'next/image';
 
-const services = [
-    {
-        icon: Droplet,
-        title: "LPG Processing and Distribution",
-        description: "Our LPG processing and distribution service is built on precision, safety, and a deep commitment to excellence. From sourcing and refining to seamless delivery, we ensure every step is designed to meet the highest industry standards. Being the supplier of clean, efficient, and reliable LPG solutions, we empower households, businesses, and industries across Bangladesh with a dependable energy source. We focus on sustainability, which drives progress while safeguarding the environment and delivering exceptional value to our consumers.",
-        features: [
-            "State-of-the-art processing facilities",
-            "Nationwide distribution network",
-            "24/7 supply chain monitoring",
-            "Safety-first approach"
-        ],
-        color: "from-blue-500 to-cyan-500"
-    },
-    {
-        icon: Truck,
-        title: "Lubricating Oil Blending & Marketing",
-        description: "We have broadened our horizons through a specialized division that imports and supplies premium lubricants and lube-based engine oils. This initiative meets the growing demand for high-quality lubricants in Bangladesh, strengthened by partnerships with globally renowned brands such as Vivo (Singapore), Hyrax (Malaysia), and Mabanol (Germany). These collaborations have paved the way for introducing cutting-edge products, including our flagship heavy-duty engine oil, Tiger Super, which Hyrax supplies, redefining performance standards in the regional market. Our dedication to excellence ensures that every drop delivers unmatched quality and reliability to our consumers.",
-        features: [
-            "Automotive lubricants",
-            "Industrial oils",
-            "Marine lubricants",
-            "Specialty products"
-        ],
-        color: "from-purple-500 to-pink-500"
-    },
-    {
-        icon: Ship,
-        title: "Maritime Transport",
-        description: "Reliable maritime transportation solutions",
-        features: [
-            "Modern vessel fleet",
-            "Experienced crew",
-            "Real-time tracking",
-            "International standards"
-        ],
-        color: "from-green-500 to-emerald-500"
-    },
-    {
-        icon: Globe,
-        title: "Global Trade",
-        description: "International energy product trading",
-        features: [
-            "Global sourcing",
-            "Quality assurance",
-            "Competitive pricing",
-            "Reliable delivery"
-        ],
-        color: "from-orange-500 to-yellow-500"
-    }
-];
 
 export default function ServicesPage() {
 
@@ -96,7 +46,7 @@ export default function ServicesPage() {
                             Reliable Energy, Seamlessly Delivered.
                         </p>
                         <p className="md:text-xl text-gray-200 max-w-6xl mx-auto">
-                            With us, you experience the power of innovation, tailored solutions, safety and sustainability.
+                            Using the expertise of our sister concerns and Coastal Gas development, our goal is to power innovation, tailored solutions, safety and sustainability.
                         </p>
                     </motion.div>
                 </div>
@@ -118,7 +68,9 @@ export default function ServicesPage() {
                                         <Droplet className="w-full h-full text-white" />
                                     </div>
                                     <CardTitle className="text-2xl mb-2">LPG Processing and Distribution</CardTitle>
-                                    <p className="text-gray-600">Our LPG processing and distribution service is built on precision, safety, and a deep commitment to excellence. From sourcing and refining to seamless delivery, we ensure every step is designed to meet the highest industry standards. Being the supplier of clean, efficient, and reliable LPG solutions, we empower households, businesses, and industries across Bangladesh with a dependable energy source. We focus on sustainability, which drives progress while safeguarding the environment and delivering exceptional value to our consumers.</p>
+                                    <p className="text-gray-600">
+                                        We are mapping out the LPG processing and distribution service to be built on precision, safety, and a deep commitment to excellence. From sourcing and refining to seamless delivery, we are designing every step to meet the highest industry standards. Our goal is to be the champion of clean, efficient, and reliable LPG solutions that will empower households, businesses, and industries across Bangladesh. We will focus on sustainability, driving progress while safeguarding the environment and delivering exceptional value to our consumers.
+                                    </p>
                                 </CardHeader>
                             </Card>
                         </motion.section>
@@ -134,9 +86,9 @@ export default function ServicesPage() {
                                     <div className={`w-16 h-16 rounded-2xl bg-gradient-to-r from-purple-500 to-pink-500 p-4 mb-4`}>
                                         <Truck className="w-full h-full text-white" />
                                     </div>
-                                    <CardTitle className="text-2xl mb-2">Lubricating Oil Blending & Marketing</CardTitle>
+                                    <CardTitle className="text-2xl mb-2">Progress with Lubricating Oil Marketing</CardTitle>
                                     <p className="text-gray-600">
-                                        We have broadened our horizons through a specialized division that imports and supplies premium lubricants and lube-based engine oils. This initiative meets the growing demand for high-quality lubricants in Bangladesh, strengthened by partnerships with globally renowned brands such as Vivo (Singapore), Hyrax (Malaysia), and Mabanol (Germany). These collaborations have paved the way for introducing cutting-edge products, including our flagship heavy-duty engine oil, Tiger Super, which Hyrax supplies, redefining performance standards in the regional market. Our dedication to excellence ensures that every drop delivers unmatched quality and reliability to our consumers.
+                                        We have already broadened our horizons through a specialized division that imports and supplies premium lubricants and lube-based engine oils. This initiative meets the growing demand for high-quality lubricants in Bangladesh, strengthened by partnerships with globally renowned brands such as Vivo (Singapore), Hyrax (Malaysia), and Mabanol (Germany). These collaborations have paved the way for the introduction of cutting-edge products, including our flagship heavy-duty engine oil, Tiger Super, which Hyrax supplies, redefining performance standards in the regional market. Our dedication to excellence ensures that every drop delivers unmatched quality and reliability to our consumers.
                                     </p>
                                     <p className="text-gray-600 mt-4">
                                         Engine oils, Tiger Super supplied Hyrax, setting a new standard in the regional market.
@@ -257,7 +209,7 @@ export default function ServicesPage() {
                                     </div>
                                     <CardTitle className="text-2xl mb-2">Shipping & Logistics</CardTitle>
                                     <p className="text-gray-600">
-                                        We offer comprehensive shipping solutions, especially documentation and specialized shipping management. Supported by advanced Fender services to protect through the company&apos;s active role in shipping and logistics, our expertise is providing the efficient, secure, and timely transportation of its products. Our capabilities are further strengthened by assets like the MT Pride of Shah Jalal, which currently transports refined oil for Padma Oil Company, showcasing our dedication to excellence in shipping operations.
+                                        With the help of our sister concern, we offer comprehensive shipping solutions, especially documentation and specialized shipping management. Supported by advanced Fender services of our other wings, we can be crucial in providing efficient, secure, and timely transportation. Our capabilities are further strengthened by assets such as the MT Pride of Shah Jalal, which currently transports refined oil for Padma Oil Company, showcasing our dedication to excellence in shipping operations.
                                     </p>
                                 </CardHeader>
                             </Card>
@@ -274,9 +226,9 @@ export default function ServicesPage() {
                                     <div className={`w-16 h-16 rounded-2xl bg-gradient-to-r from-orange-500 to-yellow-500 p-4 mb-4`}>
                                         <Globe className="w-full h-full text-white" />
                                     </div>
-                                    <CardTitle className="text-2xl mb-2">Carbon Credit Trading</CardTitle>
+                                    <CardTitle className="text-2xl mb-2">Carbon Credit</CardTitle>
                                     <p className="text-gray-600">
-                                        Coastal Gas actively engages in carbon credit trading, aligning economic growth with environmental responsibility. By participating in global carbon markets, we facilitate carbon credits&apos; purchase, sale, and exchange, helping industries offset their emissions and meet sustainability goals. Our approach supports cleaner energy solutions and fosters innovation and investment in emission-reduction projects, contributing to a greener, more sustainable future for Bangladesh and beyond.
+                                        Coastal Gas actively trades carbon credit, aligning economic growth with environmental responsibility. By participating in global carbon markets, we facilitate carbon credits&apos; purchase, sale, and exchange, helping industries offset their emissions and meet sustainability goals. Our approach supports cleaner energy solutions and fosters innovation and investment in emission-reduction projects, contributing to a greener, more sustainable future for Bangladesh and beyond.
                                     </p>
                                 </CardHeader>
                             </Card>

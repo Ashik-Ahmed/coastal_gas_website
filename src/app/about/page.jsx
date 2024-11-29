@@ -48,16 +48,16 @@ export default function AboutPage() {
                         >
                             {/* <h2 className="text-4xl font-bold mb-6">Our Journey</h2> */}
                             <p className="text-lg text-gray-600 mb-6">
-                                Founded in 2010, Coastal Gas Limited emerged with a clear mission: to address Bangladesh&#39;s rising demand for premium-quality lubricants and lube-based oils. Over the years, we have earned a significant place as a trusted partner for industries nationwide, delivering solutions that power progress and enhance performance.
+                                With our sister concerns over the years, we have earned a significant place as a trusted partner in several industries nationwide, delivering solutions that enhance performance and impact livelihoods. With Coastal Gas Limited, we have one ‘clean’ mission: to address Bangladesh&apos;s rising demand for premium-quality LPG and lube-based oils.
                             </p>
                             <p className="text-lg text-gray-600 mb-6">
-                                At the core of our success lies a commitment to innovation and excellence. While our expertise in lubricant production remains our cornerstone, we are actively expanding into new horizons. One such venture is the development and distribution of LPG under our legacy, adding diversification to our portfolio.
+                                While our expertise in lubricant production is progressing notably, we plan to expand into new horizons. One such venture is developing and distributing LPG, diversifying our portfolio.
                             </p>
                             <p className="text-lg text-gray-600 mb-6">
-                                Our operations extend beyond manufacturing. Coastal Gas Limited is a dynamic force in the global market, leveraging strategic import and export activities to secure top-grade raw materials and deliver competitive pricing. Additionally, our proficiency in shipping and logistics ensures seamless transportation and distribution, reinforcing our promise of reliability and efficiency.
+                                With our strategy, we are building ourselves to extend beyond manufacturing. We are creating ourselves as a dynamic force in the global market that will leverage strategic import and export activities to secure top-grade raw materials with competitive pricing. Additionally, our proficiency in shipping and logistics from other wings will ensure seamless transportation and distribution, reinforcing our promise of reliability and efficiency.
                             </p>
                             <p className="text-lg text-gray-600 mb-6">
-                                With a forward-thinking approach and customer-centric focus, Coastal Gas Limited continues to set new benchmarks, empowering industries and enriching lives with every step forward.
+                                With a forward-thinking approach and customer-centric focus, we anticipate Coastal Gas Limited will set new benchmarks, empowering industries and enriching lives with every step forward.
                             </p>
                         </motion.div>
                         <motion.div
@@ -88,10 +88,7 @@ export default function AboutPage() {
                         </div>
                         <h3 className="text-2xl font-semibold text-blue-700 mb-3 text-center">Our Mission</h3>
                         <p className="text-gray-700 text-center">
-                            We aim to deliver dependable, high-performance lubricants, LPG, and related energy
-                            solutions to the Bangladeshi market. We are dedicated to driving sustainable economic
-                            growth and championing environmental stewardship through innovative technologies and
-                            responsible business practices.
+                            We aim to deliver dependable, high-performance lubricants, LPG, and related energy solutions to the Bangladeshi market. Our commitment will drive sustainable economic growth and champion environmental stewardship through innovative technologies and responsible business practices.
                         </p>
                     </div>
 
@@ -102,9 +99,7 @@ export default function AboutPage() {
                         </div>
                         <h3 className="text-2xl font-semibold text-green-700 mb-3 text-center">Our Vision</h3>
                         <p className="text-gray-700 text-center">
-                            We vision to be Bangladesh’s foremost energy solutions provider, delivering a diverse
-                            portfolio of products and services that adapt to our customers’ changing needs while
-                            fostering a sustainable and thriving future for the nation.
+                            We will strive to be Bangladesh&apos;s foremost energy solutions provider, offering diverse products and services that will adapt to our customers&apos; evolving needs. Doing so will foster a sustainable and thriving future for the nation.
                         </p>
                     </div>
                 </div>

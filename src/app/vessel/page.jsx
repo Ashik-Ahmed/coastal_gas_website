@@ -47,7 +47,7 @@ export default function VesselPage() {
                         className="text-center text-white"
                     >
                         <h1 className="text-5xl font-bold mb-6">Our Vessel</h1>
-                        <p className="md:text-xl text-gray-200 max-w-3xl mx-auto">
+                        <p className="md:text-xl text-gray-200 max-w-6xl mx-auto">
                             Coastal Gas Limited proudly owns the MT Pride of Shah Jalal, a vessel currently dedicated to transporting refined oil on behalf of Padma Oil Company Ltd. This strategic asset underscores our capability to manage critical logistics efficiently, ensuring timely and secure delivery of energy resources.
                         </p>
                     </motion.div>

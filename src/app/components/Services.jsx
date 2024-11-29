@@ -14,7 +14,7 @@ const services = [
         color: 'from-blue-500 to-cyan-500'
     },
     {
-        title: 'Lubricating Oil Blending & Marketing',
+        title: 'Progress with Lubricating Oil Marketing',
         description: 'High-quality lubricants for automotive and industrial applications.',
         icon: Truck,
         link: "/services#lubricant_oil",
@@ -28,7 +28,7 @@ const services = [
         color: 'from-green-500 to-emerald-500'
     },
     {
-        title: 'Carbon Credit Trading',
+        title: 'Carbon Credit',
         description: 'International sourcing and distribution of energy products.',
         icon: Globe,
         link: "/services#carbon_credit_trading",
