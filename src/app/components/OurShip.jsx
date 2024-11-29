@@ -8,7 +8,7 @@ export default function OurShip() {
     return (
         <section id="ship" className="py-16 bg-gray-100">
             <div className="container mx-auto px-4">
-                <h2 className="text-3xl font-bold text-center mb-8">Our Vessel: MT Pride of Shah Jalal</h2>
+                <h2 className="text-blue-900 text-4xl font-bold text-center mb-8">Our Vessel: MT Pride of Shah Jalal</h2>
                 <div className="grid md:grid-cols-2 gap-8 items-center">
                     <div className="grid grid-cols-2 gap-4">
                         <Image

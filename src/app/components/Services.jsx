@@ -47,10 +47,10 @@ export default function Services() {
                     transition={{ duration: 0.6 }}
                     className="text-center mb-16"
                 >
-                    <h2 className="text-4xl font-bold mb-4">Key Services</h2>
-                    <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+                    <h2 className="text-blue-900 text-4xl font-bold mb-4">Key Services</h2>
+                    {/* <p className="text-xl text-gray-600 max-w-2xl mx-auto">
                         Comprehensive energy solutions tailored to meet your needs
-                    </p>
+                    </p> */}
                 </motion.div>
 
                 <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
