@@ -76,7 +76,7 @@ export default function Header() {
                                     {item.label}
                                 </Link>
                             ))}
-                            <Button className="w-full"><Link href="/contact">Request a Quote</Link></Button>
+                            <Button className="w-full"><Link href="/contact" onClick={() => setIsOpen(false)}>Let&apos;s Connect</Link></Button>
                         </nav>
                     </motion.div>
                 )}

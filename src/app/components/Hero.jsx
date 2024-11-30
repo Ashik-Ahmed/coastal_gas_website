@@ -23,16 +23,16 @@ export default function Hero() {
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8 }}
+                    transition={{ duration: 0.5 }}
                     className="max-w-6xl mx-auto text-center text-white"
                 >
-                    <h1 className="text-xl md:text-6xl font-bold mb-6 leading-tight">
+                    <h1 className="text-2xl md:text-6xl font-bold mb-6 leading-tight">
 
-                        <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-cyan-200">
+                        <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-900 to-cyan-200">
                             {" "}Power | Progress | Possibilities
                         </span>
                     </h1>
-                    <p className="text-xl mb-8 text-white">
+                    <p className="text-lg md:text-xl mb-8 text-white">
                         Clean Energy For A Better Tomorrow
                     </p>
                     <div className="flex gap-4 justify-center">
