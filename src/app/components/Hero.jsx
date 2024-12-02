@@ -10,12 +10,13 @@ export default function Hero() {
             <div className="absolute inset-0 overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/50 z-10"></div>
                 <Image
-                    src="https://images.unsplash.com/photo-1581094288338-2314dddb7ece?auto=format&fit=crop&q=80"
+                    src="/coastal_gas_banner.jpg"
                     alt="Energy background"
                     layout="fill"
                     objectFit="cover"
-                    className="z-0"
                     priority
+                    quality={100}
+                    className="object-contain z-0"
                 />
             </div>
 
@@ -27,10 +28,10 @@ export default function Hero() {
                     className="max-w-6xl mx-auto text-center text-white"
                 >
                     <h1 className="text-2xl md:text-6xl font-bold mb-6 leading-tight">
-
-                        <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-900 to-cyan-200">
-                            {" "}Power | Progress | Possibilities
-                        </span>
+                        Power - Progress - Possibilities
+                        {/* <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-900 to-cyan-200">
+                            {" "}
+                        </span> */}
                     </h1>
                     <p className="text-lg md:text-xl mb-8 text-white">
                         Clean Energy For A Better Tomorrow
@@ -38,7 +39,7 @@ export default function Hero() {
                     <div className="flex gap-4 justify-center">
                         <Button
                             size="lg"
-                            className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-6 text-lg rounded-full"
+                            className="bg-white hover:bg-blue-700 text-blue-900 hover:text-white px-8 py-6 text-lg rounded-full"
                         >
                             <Link href="/services">Explore Services</Link>
                         </Button>
@@ -53,7 +54,7 @@ export default function Hero() {
                 </motion.div>
             </div>
 
-            <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent z-20"></div>
+            {/* <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent z-20"></div> */}
         </section>
     );
 }
