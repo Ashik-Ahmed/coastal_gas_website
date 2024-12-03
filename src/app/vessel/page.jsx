@@ -35,6 +35,44 @@ const features = [
     "Under the classification of IR"
 ];
 
+const historyData = [
+    {
+        year: 2018,
+        totalVoyage: 34,
+        totalQtyCarried: 39825.40,
+    },
+    {
+        year: 2019,
+        totalVoyage: 32,
+        totalQtyCarried: 38637.19,
+    },
+    {
+        year: 2020,
+        totalVoyage: 19,
+        totalQtyCarried: 20864.86,
+    },
+    {
+        year: 2021,
+        totalVoyage: 26,
+        totalQtyCarried: 31414.32,
+    },
+    {
+        year: 2022,
+        totalVoyage: 36,
+        totalQtyCarried: 44924.02,
+    },
+    {
+        year: 2023,
+        totalVoyage: 35,
+        totalQtyCarried: 42274.41,
+    },
+    {
+        year: "2024 (up to October 2024)",
+        totalVoyage: 29,
+        totalQtyCarried: 34928.31,
+    },
+];
+
 export default function VesselPage() {
     return (
         <>
@@ -57,9 +95,10 @@ export default function VesselPage() {
             <section className="py-16">
                 <div className="container mx-auto px-4">
                     <Tabs defaultValue="gallery" className="space-y-8">
-                        <TabsList className="grid w-full md:w-[400px] grid-cols-2 mx-auto">
+                        <TabsList className="grid w-full md:w-[400px] grid-cols-3 mx-auto">
                             <TabsTrigger value="gallery">Gallery</TabsTrigger>
                             <TabsTrigger value="specs">Specifications</TabsTrigger>
+                            <TabsTrigger value="history">History</TabsTrigger>
                         </TabsList>
 
                         <TabsContent value="gallery" className="space-y-8">
@@ -216,6 +255,33 @@ export default function VesselPage() {
                                         </p>
                                     </CardContent>
                                 </Card>
+                            </motion.div>
+                        </TabsContent>
+
+                        <TabsContent value="history">
+                            <motion.div
+                                initial={{ opacity: 0, scale: 0.9 }}
+                                whileInView={{ opacity: 1, scale: 1 }}
+                                className="max-w-5xl mx-auto overflow-x-auto"
+                            >
+                                <table className="min-w-full border-collapse border border-gray-300">
+                                    <thead>
+                                        <tr className="bg-blue-100">
+                                            <th className="border border-gray-300 p-2 text-center font-medium">Year</th>
+                                            <th className="border border-gray-300 p-2 text-center font-medium">Total Voyage</th>
+                                            <th className="border border-gray-300 p-2 text-center font-medium">Total Quantity Carried (MT)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        {historyData.map((data, index) => (
+                                            <tr key={index}>
+                                                <td className="border border-gray-300 text-center p-2">{data.year}</td>
+                                                <td className="border border-gray-300 text-center p-2">{data.totalVoyage}</td>
+                                                <td className="border border-gray-300 text-center p-2">{data.totalQtyCarried.toFixed(2)}</td>
+                                            </tr>
+                                        ))}
+                                    </tbody>
+                                </table>
                             </motion.div>
                         </TabsContent>
                     </Tabs>
