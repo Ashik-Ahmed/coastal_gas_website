@@ -7,7 +7,7 @@ import { Toaster } from './components/ui/sonner';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
-  title: 'Coastal Gas Ltd. - Quality Energy Solutions',
+  title: 'Coastal Gas Ltd. - Clean Energy For A Better Tomorrow',
   description: 'Leading provider of energy solutions in Bangladesh since 2010',
 };
 
