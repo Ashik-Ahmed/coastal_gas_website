@@ -232,7 +232,7 @@ export default function ServicesPage() {
                                     </div>
                                     <CardTitle className="text-2xl mb-2">Carbon Credit</CardTitle>
                                     <p className="text-gray-600">
-                                        Coastal Gas actively trades carbon credit, aligning economic growth with environmental responsibility. By participating in global carbon markets, we facilitate carbon credits&apos; purchase, sale, and exchange, helping industries offset their emissions and meet sustainability goals. Our approach supports cleaner energy solutions and fosters innovation and investment in emission-reduction projects, contributing to a greener, more sustainable future for Bangladesh and beyond.
+                                        Coastal Gas Ltd is committed to building infrastructure that aligns with Bangladesh&apos;s economic growth while prioritizing environmental responsibility. Our approach embraces cleaner energy solutions, driving innovation and investments in emission-reduction initiatives. By fostering sustainability, we aim to contribute to a greener, more prosperous future for Bangladesh and the global community.
                                     </p>
                                 </CardHeader>
                             </Card>
