@@ -7,7 +7,6 @@ import {
     Ruler,
     Scale,
     Engine,
-    Shield,
     DollarSign,
     CheckCircle2
 } from 'lucide-react';
@@ -23,7 +22,6 @@ const specifications = [
     { icon: Ship, label: "Type", value: "Oil Tanker" },
     { icon: Engine, label: "Engine", value: "China Diesel (2Nos)" },
     { icon: Engine, label: "Horse Power", value: "720X2=1440 BHP" },
-    // { icon: Shield, label: "Classification", value: "RINA" }
 ];
 
 const features = [

@@ -6,12 +6,8 @@ import {
     Truck,
     Ship,
     Globe,
-    ArrowRight,
-    CheckCircle
 } from 'lucide-react';
-import { Card, CardContent, CardHeader, CardTitle } from '../components/ui/card';
-import { Button } from '../components/ui/button';
-import Link from 'next/link';
+import { Card, CardHeader, CardTitle } from '../components/ui/card';
 import Image from 'next/image';
 
 

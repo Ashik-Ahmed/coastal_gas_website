@@ -3,21 +3,9 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import {
-    Users,
     Target,
-    Trophy,
-    Award,
-    Eye,
-    Lightbulb
+    Eye
 } from 'lucide-react';
-import { Card, CardContent } from '../components/ui/card';
-
-const stats = [
-    { icon: Users, value: '50+', label: 'Employees' },
-    { icon: Target, value: '14+', label: 'Years Experience' },
-    { icon: Award, value: '500+', label: 'Clients' },
-    { icon: Trophy, value: '1000+', label: 'Success Stories' },
-];
 
 export default function AboutPage() {
     return (
