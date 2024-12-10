@@ -67,7 +67,7 @@ export default function Services() {
                                     <service.icon className="w-full h-full text-white" />
                                 </div>
                                 <h3 className="text-xl font-semibold mb-3">{service.title}</h3>
-                                <p className="text-gray-600 mb-4">{service.description}</p>
+                                {/* <p className="text-gray-600 mb-4">{service.description}</p> */}
                                 <Link href={service.link} className="flex items-center text-blue-600 group-hover:text-blue-700">
                                     Learn More <ChevronRight className="ml-2 w-4 h-4" />
                                 </Link>

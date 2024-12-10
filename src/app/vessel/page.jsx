@@ -93,10 +93,10 @@ export default function VesselPage() {
             <section className="py-16">
                 <div className="container mx-auto px-4">
                     <Tabs defaultValue="gallery" className="space-y-8">
-                        <TabsList className="grid w-full md:w-[400px] grid-cols-3 mx-auto">
+                        <TabsList className="grid w-full md:w-[450px] grid-cols-3 mx-auto">
                             <TabsTrigger value="gallery">Gallery</TabsTrigger>
                             <TabsTrigger value="specs">Specifications</TabsTrigger>
-                            <TabsTrigger value="history">History</TabsTrigger>
+                            <TabsTrigger value="history">Voyage Summmary</TabsTrigger>
                         </TabsList>
 
                         <TabsContent value="gallery" className="space-y-8">
