@@ -22,7 +22,7 @@ const contactInfo = [
     {
         icon: Phone,
         title: "Call Us",
-        details: "+880-2-8189244, +880-2-8189321, +880-2-58155623"
+        details: "+880-2-55013773, +880-2-55013774"
     },
     {
         icon: Mail,
