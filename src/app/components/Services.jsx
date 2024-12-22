@@ -28,7 +28,7 @@ const services = [
         color: 'from-green-500 to-emerald-500'
     },
     {
-        title: 'Carbon Credit',
+        title: 'Carbon Credit Trading',
         description: 'International sourcing and distribution of energy products.',
         icon: Globe,
         link: "/services#carbon_credit_trading",

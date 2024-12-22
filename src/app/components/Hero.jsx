@@ -28,7 +28,7 @@ export default function Hero() {
                     className="max-w-6xl mx-auto text-center text-white"
                 >
                     <h1 className="text-2xl md:text-6xl font-bold mb-6 leading-tight">
-                        Power - Progress - Possibilities
+                        Performance - Progress - Possibilities
                         {/* <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-900 to-cyan-200">
                             {" "}
                         </span> */}

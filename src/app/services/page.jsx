@@ -226,9 +226,9 @@ export default function ServicesPage() {
                                     <div className={`w-16 h-16 rounded-2xl bg-gradient-to-r from-orange-500 to-yellow-500 p-4 mb-4`}>
                                         <Globe className="w-full h-full text-white" />
                                     </div>
-                                    <CardTitle className="text-2xl mb-2">Carbon Credit</CardTitle>
+                                    <CardTitle className="text-2xl mb-2">Carbon Credit Trading</CardTitle>
                                     <p className="text-gray-600">
-                                        Coastal Gas Ltd is committed to building infrastructure that aligns with Bangladesh&apos;s economic growth while prioritizing environmental responsibility. Our approach embraces cleaner energy solutions, driving innovation and investments in emission-reduction initiatives. By fostering sustainability, we aim to contribute to a greener, more prosperous future for Bangladesh and the global community.
+                                        Coastal Gas envisions becoming a key player in carbon credit trading, aligning economic growth with environmental responsibility. By planning to enhance our processes with strategic expertise, we aim to participate in global carbon markets, facilitating the purchase, sale, and exchange of carbon credits. Carbon credit trading allows industries to offset carbon emissions by purchasing credits from projects that reduce or remove greenhouse gases, such as renewable energy initiatives or reforestation projects. This system enables businesses to meet their environmental goals while promoting sustainable practices. Through this approach, we aim to contribute to a greener, more sustainable future for Bangladesh and the global community.
                                     </p>
                                 </CardHeader>
                             </Card>
