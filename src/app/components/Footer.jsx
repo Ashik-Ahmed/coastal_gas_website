@@ -63,6 +63,10 @@ export default function Footer() {
                 <div className="mt-8 pt-8 border-t border-gray-700 text-center">
                     <p>&copy; 2024 Coastal Gas Ltd. All Rights Reserved.</p>
                 </div>
+
+                <div className='w-full py-2'>
+                    <p className='text-center text-xs font-light italic'>Developed by <Link href="https://lamdatelecombd.com/" target="_blank" className='underline'>Lamda Telecom</Link></p>
+                </div>
             </div>
         </footer>
     );
