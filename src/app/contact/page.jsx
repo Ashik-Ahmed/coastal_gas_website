@@ -13,6 +13,34 @@ import { Input } from '../components/ui/input';
 import { Button } from '../components/ui/button';
 import { Textarea } from '../components/ui/textarea';
 
+
+
+async function sendEmail(formData) {
+    try {
+        const response = await fetch('/api/send-email', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(formData),
+        });
+
+        if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+
+        const data = await response.json();
+        if (data.success) {
+            console.log('Email sent successfully!');
+            window.alert('We have received your message!');
+        } else {
+            console.error('Failed to send email:', data.message);
+            window.alert('Failed to send email. Please try again.');
+        }
+    } catch (error) {
+        console.error('Error:', error.message);
+        window.alert('An error occurred. Please try again.');
+    }
+}
+
 const contactInfo = [
     {
         icon: MapPin,
@@ -37,6 +65,25 @@ const contactInfo = [
 ];
 
 export default function ContactPage() {
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        const form = e.target;
+        const data = new FormData(form);
+        const formData = Object.fromEntries(data.entries());
+
+        // const name = formData.firstName + ' ' + formData.lastName;
+        // const email = formData.email;
+        // const subject = formData.subject;
+        // const message = formData.message;
+        console.log(formData);
+
+        sendEmail(formData);
+
+        // Reset the form
+        form.reset();
+    }
+
     return (
         <>
             <section className="relative py-24 bg-gradient-to-r from-blue-900 to-blue-700">
@@ -66,26 +113,30 @@ export default function ContactPage() {
                             <h2 className="text-3xl font-bold mb-8">Send Us a Message</h2>
                             <Card>
                                 <CardContent className="p-6">
-                                    <form className="space-y-6">
+                                    <form onSubmit={handleSubmit} className="space-y-6">
                                         <div className="grid md:grid-cols-2 gap-4">
                                             <div>
                                                 <label className="block text-sm font-medium mb-2">First Name</label>
-                                                <Input placeholder="John" className="placeholder:text-gray-400" />
+                                                <Input id="firstName" name="firstName" placeholder="John" className="placeholder:text-gray-400" />
                                             </div>
                                             <div>
                                                 <label className="block text-sm font-medium mb-2">Last Name</label>
-                                                <Input placeholder="Doe" className="placeholder:text-gray-400" />
+                                                <Input id="lastName" name="lastName" placeholder="Doe" className="placeholder:text-gray-400" />
                                             </div>
                                         </div>
                                         <div>
-                                            <label className="block text-sm font-medium mb-2">Email</label>
-                                            <Input type="email" placeholder="john@example.com" className="placeholder:text-gray-400" />
+                                            <label className="block text-sm font-medium mb-2">Your Email</label>
+                                            <Input id="email" name="email" type="email" placeholder="john@example.com" className="placeholder:text-gray-400" />
+                                        </div>
+                                        <div>
+                                            <label className="block text-sm font-medium mb-2">Subject</label>
+                                            <Input id="subject" name="subject" type="text" placeholder="Subject here" className="placeholder:text-gray-400" />
                                         </div>
                                         <div>
                                             <label className="block text-sm font-medium mb-2">Message</label>
-                                            <Textarea placeholder="Your message..." className="h-32 placeholder:text-gray-400" />
+                                            <Textarea id="message" name="message" placeholder="Your message..." className="h-32 placeholder:text-gray-400" />
                                         </div>
-                                        <Button className="w-full">
+                                        <Button type="submit" className="w-full">
                                             Send Message <Send className="ml-2 w-4 h-4" />
                                         </Button>
                                     </form>
