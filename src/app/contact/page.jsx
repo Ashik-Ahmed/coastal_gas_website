@@ -78,7 +78,7 @@ export default function ContactPage() {
         // const message = formData.message;
         console.log(formData);
 
-        sendEmail(formData);
+        // sendEmail(formData);
 
         // Reset the form
         form.reset();
