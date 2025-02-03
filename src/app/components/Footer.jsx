@@ -61,7 +61,7 @@ export default function Footer() {
                     </div>
                 </div>
                 <div className="mt-8 pt-8 border-t border-gray-700 text-center">
-                    <p>&copy; 2024 Coastal Gas Ltd. All Rights Reserved.</p>
+                    <p>&copy; {new Date().getFullYear()} Coastal Gas Ltd. All Rights Reserved.</p>
                 </div>
 
                 <div className='w-full py-2'>
