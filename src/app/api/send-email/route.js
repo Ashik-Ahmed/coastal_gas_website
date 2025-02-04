@@ -3,12 +3,12 @@ import nodemailer from 'nodemailer';
 export async function POST(req) {
     try {
         const body = await req.json(); // Parse the incoming JSON request
-        const { firstName, lastName, email, subject, message } = body;
+        const { name, email, subject, message } = body;
 
         // Create a transporter
         const transporter = nodemailer.createTransport({
-            host: 'cmail.colocity.host', // Replace with your Zimbra SMTP host
-            port: 465, // Use 465 for SSL or 587 for STARTTLS
+            host: process.env.SMTP_HOST, // Replace with your Zimbra SMTP host
+            port: process.env.SMTP_PORT, // Use 465 for SSL or 587 for STARTTLS
             secure: true, // Use true for SSL
             auth: {
                 user: process.env.AUTH_EMAIL, // Your Zimbra email address
@@ -18,24 +18,24 @@ export async function POST(req) {
 
         // Email options
         const mailOptions = {
-            from: `"${firstName} ${lastName}" <${email}>`, // Sender address
-            to: 'info@coastalgas.com.bd', // Recipient email
+            from: `"${name}" <${email}>`, // Sender address
+            to: process.env.RECIPIENT_EMAIL, // Recipient email
             subject: subject, // Subject line
             text: message, // Plain text body
-            html: `<p>${message}</p>` // HTML body
+            html: `<pre>${message}</pre>` // HTML body
         };
 
         // Send the email
         const info = await transporter.sendMail(mailOptions);
 
-        console.log('Email sent: %s', info.messageId);
+        // console.log('Email sent: %s', info.messageId);
 
         return new Response(
             JSON.stringify({ success: true, message: 'Email sent successfully!' }),
             { status: 200, headers: { 'Content-Type': 'application/json' } }
         );
     } catch (error) {
-        console.error('Error sending email:', error);
+        // console.error('Error sending email:', error);
 
         return new Response(
             JSON.stringify({ success: false, message: 'Failed to send email.' }),

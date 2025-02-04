@@ -12,34 +12,7 @@ import { Card, CardContent } from '../components/ui/card';
 import { Input } from '../components/ui/input';
 import { Button } from '../components/ui/button';
 import { Textarea } from '../components/ui/textarea';
-
-
-
-async function sendEmail(formData) {
-    try {
-        const response = await fetch('/api/send-email', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(formData),
-        });
-
-        if (!response.ok) {
-            throw new Error(`HTTP error! Status: ${response.status}`);
-        }
-
-        const data = await response.json();
-        if (data.success) {
-            console.log('Email sent successfully!');
-            window.alert('We have received your message!');
-        } else {
-            console.error('Failed to send email:', data.message);
-            window.alert('Failed to send email. Please try again.');
-        }
-    } catch (error) {
-        console.error('Error:', error.message);
-        window.alert('An error occurred. Please try again.');
-    }
-}
+import { useState } from 'react';
 
 const contactInfo = [
     {
@@ -65,23 +38,59 @@ const contactInfo = [
 ];
 
 export default function ContactPage() {
+    const [formStatus, setFormStatus] = useState(null)
+    const [emailLoading, setEmailLoading] = useState(false)
+    const [formData, setFormData] = useState({  // Initialize state for formData
+        firstName: '',
+        lastName: '',
+        email: '',
+        subject: '',
+        message: ''
+    })
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        const form = e.target;
-        const data = new FormData(form);
-        const formData = Object.fromEntries(data.entries());
+    async function sendEmail(formData) {
+        try {
+            const response = await fetch('/api/send-email', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(formData),
+            });
 
-        // const name = formData.firstName + ' ' + formData.lastName;
-        // const email = formData.email;
-        // const subject = formData.subject;
-        // const message = formData.message;
-        console.log(formData);
+            if (!response.ok) {
+                throw new Error(`HTTP error! Status: ${response.status}`);
+            }
 
-        // sendEmail(formData);
+            const data = await response.json();
+            console.log('data:', data);
+            return data;
 
-        // Reset the form
-        form.reset();
+        } catch (error) {
+            console.error('Error:', error.message);
+            return { error: error.message };
+        }
+    }
+
+    const handleSubmit = async (e) => {
+        setFormStatus(null)
+        setEmailLoading(true)
+        e.preventDefault()
+        formData.name = formData.firstName + ' ' + formData.lastName
+        const email = await sendEmail(formData)
+
+        if (email.success) {
+            setFormStatus('success')
+            setFormData({ firstName: '', lastName: '', email: '', subject: '', message: '' }) // Reset form state
+        } else {
+            setFormStatus('error')
+        }
+        setEmailLoading(false)
+    }
+
+    const handleChange = (e) => {
+        setFormData({
+            ...formData,
+            [e.target.name]: e.target.value
+        })
     }
 
     return (
@@ -117,29 +126,72 @@ export default function ContactPage() {
                                         <div className="grid md:grid-cols-2 gap-4">
                                             <div>
                                                 <label className="block text-sm font-medium mb-2">First Name</label>
-                                                <Input id="firstName" name="firstName" placeholder="John" className="placeholder:text-gray-400" />
+                                                <Input
+                                                    id="firstName"
+                                                    name="firstName"
+                                                    placeholder="John"
+                                                    value={formData.firstName}
+                                                    onChange={handleChange}
+                                                    className="placeholder:text-gray-400" />
                                             </div>
                                             <div>
                                                 <label className="block text-sm font-medium mb-2">Last Name</label>
-                                                <Input id="lastName" name="lastName" placeholder="Doe" className="placeholder:text-gray-400" />
+                                                <Input
+                                                    id="lastName"
+                                                    name="lastName"
+                                                    placeholder="Doe"
+                                                    value={formData.lastName}
+                                                    onChange={handleChange}
+                                                    className="placeholder:text-gray-400" />
                                             </div>
                                         </div>
                                         <div>
                                             <label className="block text-sm font-medium mb-2">Your Email</label>
-                                            <Input id="email" name="email" type="email" placeholder="john@example.com" className="placeholder:text-gray-400" />
+                                            <Input
+                                                id="email"
+                                                name="email"
+                                                type="email"
+                                                placeholder="john@example.com"
+                                                value={formData.email}
+                                                onChange={handleChange}
+                                                className="placeholder:text-gray-400" />
                                         </div>
                                         <div>
                                             <label className="block text-sm font-medium mb-2">Subject</label>
-                                            <Input id="subject" name="subject" type="text" placeholder="Subject here" className="placeholder:text-gray-400" />
+                                            <Input
+                                                id="subject"
+                                                name="subject"
+                                                type="text"
+                                                placeholder="Subject here"
+                                                value={formData.subject}
+                                                onChange={handleChange}
+                                                className="placeholder:text-gray-400" />
                                         </div>
                                         <div>
                                             <label className="block text-sm font-medium mb-2">Message</label>
-                                            <Textarea id="message" name="message" placeholder="Your message..." className="h-32 placeholder:text-gray-400" />
+                                            <Textarea
+                                                id="message"
+                                                name="message"
+                                                placeholder="Your message..."
+                                                value={formData.message}
+                                                onChange={handleChange}
+                                                className="h-32 placeholder:text-gray-400" />
                                         </div>
-                                        <Button type="submit" className="w-full">
+                                        <Button type="submit" className={`w-full ${emailLoading ? 'bg-gray-400 cursor-not-allowed' : ''}`}>
                                             Send Message <Send className="ml-2 w-4 h-4" />
                                         </Button>
                                     </form>
+                                    {formStatus === 'success' &&
+                                        (
+                                            <p className="text-blue-700 mt-4">We have received your message. Thanks for getting in touch!</p>
+                                        )
+                                    }
+                                    {
+                                        formStatus === 'error' &&
+                                        (
+                                            <p className="text-white bg-red-500 mt-4">Something went wrong. Please try again later.</p>
+                                        )
+                                    }
                                 </CardContent>
                             </Card>
                         </motion.div>
